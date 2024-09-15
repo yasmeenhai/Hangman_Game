@@ -16,11 +16,11 @@ int main() {
             {"Spoon", "Something we use while eating"},
             {"University", "A place where we hate to go :((("},
             {"Youtube", "A website we use to watch videos"},
-            {"Library", "A place where you can borrow books"},
-            {"Oxygen", "A gas essential for breathing"},
-            {"Giraffe", "An animal known for its long neck"},
-            {"Pizza", "A popular Italian dish with cheese and toppings"},
-            {"Elephant", "The largest land animal with big ears and a trunk"}
+        {"Library", "A place where you can borrow books"},
+        {"Oxygen", "A gas essential for breathing"},
+        {"Giraffe", "An animal known for its long neck"},
+        {"Pizza", "A popular Italian dish with cheese and toppings"},
+        {"Elephant", "The largest land animal with big ears and a trunk"}
         };
 
         // Select some random word
@@ -43,22 +43,26 @@ int main() {
         char wrong_entered_chars [5]={0};
         char entered_char;
         bool completed=False;
+        gameover=False;
 
         bool not_out_of_guesses = True ;
         /* ============= Pseudo code ============= */
 
-        while (not_out_of_guesses)
+        while (not_out_of_guesses )
         {
             bool iscorrect = False;  //use to increment trials if the letter is not found in this trial
             bool repeated = False; //to handle not printing wrong guess for a repeated input
 
                 //display current word statue
                 DisplayWord(word.Word,guessedchar);
+
+                // End the game if the word is guessed or game is over
+               if (completed || trials >2 || gameover)  break;
+
                 //draw current statue
                 drawHangman(trials);
-                
-                if (completed || trials >3)  break; // End the game if the word is guessed or game is over
-                
+
+
                 //ask the user to guess a letter from the word
                 puts("Guess a letter :");
                 scanf(" %c", &entered_char);
@@ -108,7 +112,7 @@ int main() {
                         puts("Yaaaaaaaayy , you guessed it right ");
                                     }
                 }
-                    
+
         }
         free(guessedchar);
         return 0;
