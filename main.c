@@ -16,11 +16,11 @@ int main() {
             {"Spoon", "Something we use while eating"},
             {"University", "A place where we hate to go :((("},
             {"Youtube", "A website we use to watch videos"},
-        {"Library", "A place where you can borrow books"},
-        {"Oxygen", "A gas essential for breathing"},
-        {"Giraffe", "An animal known for its long neck"},
-        {"Pizza", "A popular Italian dish with cheese and toppings"},
-        {"Elephant", "The largest land animal with big ears and a trunk"}
+            {"Library", "A place where you can borrow books"},
+            {"Oxygen", "A gas essential for breathing"},
+            {"Giraffe", "An animal known for its long neck"},
+            {"Pizza", "A popular Italian dish with cheese and toppings"},
+            {"Elephant", "The largest land animal with big ears and a trunk"}
         };
 
         // Select some random word
