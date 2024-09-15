@@ -56,6 +56,9 @@ int main() {
                 DisplayWord(word.Word,guessedchar);
                 //draw current statue
                 drawHangman(trials);
+                
+                if (completed || trials >3)  break; // End the game if the word is guessed or game is over
+                
                 //ask the user to guess a letter from the word
                 puts("Guess a letter :");
                 scanf(" %c", &entered_char);
@@ -105,9 +108,7 @@ int main() {
                         puts("Yaaaaaaaayy , you guessed it right ");
                                     }
                 }
-                     if (completed || trials >2)  break; // End the game if the word is guessed or game is over
-
-
+                    
         }
         free(guessedchar);
         return 0;
