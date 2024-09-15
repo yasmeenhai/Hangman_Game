@@ -40,6 +40,7 @@ void drawHangman(int trials){
             printf(" |   /|\\\n");
             printf(" |   / \\\n");
             printf("_|_      \n\n");
+            gameover=True;
             printf("Game Over! You are hanged!\n\n");
             break;
         default:
