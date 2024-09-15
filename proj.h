@@ -8,6 +8,8 @@ typedef int bool;
 
 #define NumWords 9
 
+ bool gameover;
+
 // Structure definition for WordWithHint
 struct WordWithHint {
     char Word[15];
