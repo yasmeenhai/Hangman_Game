@@ -105,7 +105,7 @@ int main() {
                         puts("Yaaaaaaaayy , you guessed it right ");
                                     }
                 }
-                     if (completed || trials >3)  break; // End the game if the word is guessed or game is over
+                     if (completed || trials >2)  break; // End the game if the word is guessed or game is over
 
 
         }
