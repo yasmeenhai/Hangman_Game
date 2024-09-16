@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include <ctype.h>
-#include "proj.h"  
+#include "proj.h"
 
 
 
@@ -56,11 +56,12 @@ int main() {
                 //display current word statue
                 DisplayWord(word.Word,guessedchar);
 
-                // End the game if the word is guessed or game is over
-               if (completed || trials >2 || gameover)  break;
-
                 //draw current statue
                 drawHangman(trials);
+
+
+                // End the game if the word is guessed or game is over
+               if (completed || trials >2 || gameover)  break;
 
 
                 //ask the user to guess a letter from the word
